@@ -1,0 +1,514 @@
+/* Estilos generales para toda la web */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf6e3;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo para el header (cabecera) */
+header {
+    background-color: #f7d794;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+
+/* Estilo para la barra de navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    background-color: #f7d794;;
+    border-radius: 5px;
+    color: #333;
+}
+
+/* Estilo para las secciones principales */
+main {
+    padding: 20px;
+}
+
+
+
+/* Sección de pie de página */
+footer {
+    background-color: #f7d794;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #000000;
+}
+
+
+
+/* Sección de presentación del Index*/
+.presentationIndex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between; /*a revisar */
+    gap: 20px;
+}
+
+.presentacionTextoIndex {
+    width: 95%;
+    grid-column: 1 / 3;
+    align-content: center;
+    margin-top: -10%;
+}
+
+.presentacionTextoIndex h2  {
+    font-size: 2.3em;
+    color: #444;
+}
+
+.presentacionTextoIndex h3  {
+    font-size: 1.3em;
+    color: #f8c557;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style:oblique;
+    font-weight: 10;
+}
+
+.presentacionTextoIndex p {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 5%;
+}
+
+.presentacionImagen img {
+    width: 100%;
+    height: 100%;
+    grid-column: 3 / 3 ;
+    border-radius: 10px;
+}
+
+/* Estilo para productos más vendidos */
+.sugerencias h2 {
+    font-size: 2em;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.divSugerencias {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    border: solid #f8c557;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    
+}
+
+.productosSugeridos {
+    width: 30%;
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.productosSugeridos img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.productosSugeridos h3 {
+    margin-top: 10px;
+    font-size: 1.4em;
+    color: #444;
+}
+
+.productosSugeridos p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.botonVerMas {
+    /*display: inline-block;*/
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f8c557;
+    color: white;
+    text-decoration: none;
+    border: solid #f8ab06;
+    border-radius: 5px;
+    float: inline-end;    
+}
+
+.botonVerMas:hover {
+    background-color: #ffffff;
+    color: #f8ab06;
+}
+
+/* Estilo para el aside de Categorías del Index.html */
+.asideCategoriasIndex {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    margin-top: 60px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.asideCategoriasIndex h3 {
+    font-size: 3em;
+    color: #060606;
+}
+
+.asideCategoriasIndex ul {
+    list-style: none;
+    padding-left: 0;
+    justify-self: center;
+}
+
+.asideCategoriasIndex ul li {
+    margin-bottom: 2%;
+}
+
+.asideCategoriasIndex ul li a {
+    color: #fac450;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.asideCategoriasIndex ul li a:hover {
+    color: #ffae00;
+    background-color:white;
+    border: solid #f8ab06;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 2.03em;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Estilos para la página Categorías.html */
+
+/* Estilo para el Main de Categorias.html */
+.categorias {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    
+    
+}
+
+/* Estilo para el contenido del Main de la página Categorías.html */
+.categorias a {
+
+    text-decoration: none;
+}
+
+
+.categoriaIzq, .categoriaDerecha {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    width: 48%; /* 48% de la pantalla para cada categoría para que sea lo más responsive posible*/
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    
+}
+
+.categoriaIzq h2, .categoriaDerecha h2 {
+    font-size: 1.8em;
+    color: #444;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+
+.categoriaIzq:hover, .categoriaDerecha:hover {
+    
+    background-color: #f7d794 ;
+    
+}
+
+
+/*Sección para las páginas de Panadería.html-Bolleria.html*/
+
+    .mainPanBollos {
+
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        height: auto;   
+        background-color:#efe5d1
+    }
+
+    .sectionIzqPanaderia {
+         
+        height: 100% ;
+        display: grid;
+        justify-content: center;
+        
+    }
+
+
+
+    .sectionDerechaPanaderia {
+        
+        height: 100%;
+        text-align: left
+        
+    }
+
+    .filasPanBollos {
+
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        height: 100%;
+        gap: 10px;
+        
+
+
+    }
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 15px;
+}
+
+section ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+section ul li a:hover {
+    text-decoration: underline;
+}
+
+.sectionDetalles {
+    
+    text-align: center;
+    
+
+}
+
+.imagenDetalles:hover {
+    
+        
+        transition: transform .3s; /* Animation */
+        width: 25vmax;
+        height: 25vmax;
+        margin: 0 auto;
+        transform: scale(1.5);
+    
+}
+
+
+/* Estilo para formulario de registro (lado izquierdo del main de RRSS.html) */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: white;    
+    color:#f8c557;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    color: white;
+    background-color:#f8c557;
+
+}
+
+
+/* Estilos para el lado derecho del main de RRSS.html */
+.paginaRedes {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.paginaRedes .newsletter, .paginaRedes .redesSociales {
+    width: 48%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.paginaRedes .redesSociales .links ul {
+   
+    padding: 20px;
+    text-align: center;
+}
+
+
+.paginaRedes .redesSociales .links ul li a:hover {
+    color:#fffefe;
+    background-color:#f8c557;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.paginaRedes .redesSociales .video {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.paginaRedes .redesSociales .video video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Estilos para las páginas de contenido de Cookies_y_privacidad.html */
+.politicaPrivacidad {
+    padding: 20px;
+}
+
+.politicaPrivacidad h2 {
+    font-size: 1.8em;
+    color: #444;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.politicaPrivacidad h3 {
+    font-size: 1.4em;
+    color: #555;
+    margin-top: 20px;
+}
+
+.politicaPrivacidad ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.politicaPrivacidad a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.politicaPrivacidad a:hover {
+    color: #0056b3;
+}
+
+/* Estilos para Area_personal.html*/
+.areaPersonal {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.infoUsuario, .accionesUsuario {
+    width: 48%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.infoUsuario ul, .accionesUsuario ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.infoUsuario li, .accionesUsuario li {
+    margin-bottom: 15px;
+}
+
+.accionesUsuario a {
+    color:#060606;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.accionesUsuario a:hover {
+    color:#fffefe;
+    background-color:#f8c557;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo para el botón de eliminar cuenta */
+#borrarCuenta {
+    color: #d9534f;
+}
+
+#borrarCuenta:hover {
+    color: #f19190;
+    background-color: #c42522;
+
+}
+
